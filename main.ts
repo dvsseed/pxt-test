@@ -400,3 +400,58 @@ namespace test {
 
 
 }
+
+//% weight=110 color=#0fbc11 icon="\uf10c"
+namespace Bits {
+    enum digit_value {
+        //% block="zero"
+        zero,
+        //% block="one"
+        one,
+        //% block="complement"
+        com
+    }
+    let hex_arr = "0123456789abcdef"
+    let dec_num = 0
+    //% weight=100 blockId="id_raiseto" block="%base | raised to %exp"
+    export function fn_raiseto(base: number, exp: number): number {
+        return Math.pow(base, exp)
+    }
+    //% weight=90 blockId="id_getbit" block="get bit %pos | in %num"
+    export function fn_getbit(pos: number, num: number): number {
+        return (num >> pos) & 1
+    }
+    //% weight=80 blockId="id_setbit" block="set bit %pos | in %num | to %dv"
+    export function fn_setbit(pos: number, num: number, dv: digit_value): number {
+        if (dv == digit_value.zero)
+            return num & ((1 << pos) ^ 0xffff)
+        else if (dv == digit_value.one)
+            return num | (1 << pos)
+        else
+            return num ^ (1 << pos)
+    }
+    //% weight=70 blockId="id_hextodec" block="convert hexadecimal %hex_num | to decimal"
+    export function fn_hextodec(hex_num: string): number {
+        dec_num = 0
+        for (let index = 0; index <= hex_num.length - 1; index++) {
+            let char = hex_num.charAt(hex_num.length - 1 - index)
+            for (let index2 = 0; index2 <= 15; index2++) {
+                if (char.compare(hex_arr.charAt(index2)) == 0) {
+                    dec_num = dec_num + index2 * Math.pow(16, index)
+                }
+            }
+        }
+        return dec_num
+    }
+    //% weight=60 blockId="id_bintodec" block="convert binary %bin_num | to decimal"
+    export function fn_bintodec(bin_num: string): number {
+        dec_num = 0
+        for (let index = 0; index <= bin_num.length - 1; index++) {
+            let char = bin_num.charAt(bin_num.length - 1 - index)
+            if (char.compare("1") == 0) {
+                dec_num = dec_num + Math.pow(2, index)
+            }
+        }
+        return dec_num
+    }
+}
