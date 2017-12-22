@@ -17,7 +17,7 @@ namespace VT100 {
     export function fn_showNumber(n: number): void {
         serial.writeString(n.toString());
     }
-    //% weight=80 blockId="id_showascii" block="show ascci %n"
+    //% weight=80 blockId="id_showascii" block="show ascii %n"
     export function fn_showAscii(n: number): void {
         serial.writeString(String.fromCharCode(n));
     }
