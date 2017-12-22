@@ -1,13 +1,12 @@
 /*
-R
 modified from pxt-servo/servodriver.ts
 load dependency
-"taibit": "file:../pxt-taibit"
+"test": "file:../pxt-test"
 */
 
 
 //% color="#31C7D5" weight=10 icon="\uf1d0"
-namespace taibit {
+namespace test {
     const PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
     const MODE2 = 0x01
