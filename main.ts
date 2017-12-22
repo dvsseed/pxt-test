@@ -1,5 +1,5 @@
 
-//% weight=130 color=#0fbc11 icon="\uf26c"
+//% weight=140 color=#0fbc11 icon="\uf26c"
 namespace VT100 {
     //% weight=100 blockId="id_setdisplay" block="set mode %mode | background color %bc | foreground color %fc"
     export function fn_setDisplay(mode: number, bc: number, fc: number): void {
@@ -54,7 +54,7 @@ namespace VT100 {
         serial.writeString("\x1B[1K");
     }
 }
-//% weight=120 color=#0fbc11 icon="\uf009"
+//% weight=130 color=#0fbc11 icon="\uf009"
 namespace Two_digits {
     let off = 0
     let pos = 0
@@ -174,7 +174,7 @@ namespace Two_digits {
         }
     }
 }
-//% weight=110 color=#0fbc11 icon="\uf10c"
+//% weight=120 color=#0fbc11 icon="\uf10c"
 namespace Bits {
     enum digit_value {
         //% block="zero"
@@ -229,7 +229,7 @@ namespace Bits {
     }
 }
 
-//% weight=100 color=#0fbc11 icon="\uf0e7"
+//% weight=110 color=#0fbc11 icon="\uf0e7"
 namespace taibit {
     /** function */
     function delay_LED(item: number) {
@@ -242,7 +242,7 @@ namespace taibit {
       * Show LED Matrix to back and forth => run for many times
       * @param ts describe parameter here, eg: 100
     */
-    //% weight=90 blockId="id_delayleds" block="delayleds for times | %ts"
+    //% weight=100 blockId="id_delayleds" block="delayleds for times | %ts"
     export function delayleds(ts: number) {
         while (ts > 0) {
             for (let i = 0; i <= 4; i++) {
@@ -267,7 +267,7 @@ namespace taibit {
       * Control Vibration Motor (pin12) => on | off
       * @param to describe parameter here, eg: 0
     */
-    //% weight=80 blockId="id_vibrationmotor" block="vibration motor | %to"
+    //% weight=90 blockId="id_vibrationmotor" block="vibration motor | %to"
     export function vibrationMotor(to: number) {
         vibration_Motor(to)
     }
@@ -276,7 +276,7 @@ namespace taibit {
       * Control Vibration Motor (pin12) => pause millisecond
       * @param ms describe parameter here, eg: 100
     */
-    //% weight=70 blockId="id_vibrationmotorpause" block="vibration motor pause (ms)| %ms"
+    //% weight=80 blockId="id_vibrationmotorpause" block="vibration motor pause (ms)| %ms"
     export function vibrationMotorPause(ms: number) {
         vibration_Motor(1)
         basic.pause(ms)
