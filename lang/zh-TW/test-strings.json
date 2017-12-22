@@ -1,0 +1,8 @@
+{
+	"test.fn_setDisplay|block": "設定 模式 %mode | 背景顏色 %bc | 前景顏色 %fc",
+	"test.fn_hextodec|block": "轉換 十六進制 %hex_num | 為 十進制",
+	"test.fn_bintodec|block": "轉換 二進制 %bin_num | 為 十進制",
+	"test.delayleds|block": "霹靂燈 | 次數 %ts",
+	"test.vibrationMotor|block": "振動馬達 | 開關 %to",
+	"test.vibrationMotorPause|block": "振動馬達 | 毫秒 %ms"
+}
