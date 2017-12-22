@@ -54,7 +54,7 @@ namespace VT100 {
         serial.writeString("\x1B[1K");
     }
 }
-//% weight=130 color=#bda00f icon="\uf009"
+//% weight=130 color=#00ff11 icon="\uf009"
 namespace Two_digits {
     let off = 0
     let pos = 0
