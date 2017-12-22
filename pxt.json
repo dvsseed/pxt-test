@@ -9,7 +9,8 @@
     "files": [
         "README.md",
         "main.ts",
-        "taibit.ts"
+        "taibit.ts",
+        "lang/zh-TW/test-strings.json"
     ],
     "testFiles": [
         "test.ts"
