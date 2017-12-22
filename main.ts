@@ -1,5 +1,5 @@
 
-//% weight=140 color=#0fbc11 icon="\uf26c"
+//% weight=140 color=#bd0f7d icon="\uf26c"
 namespace VT100 {
     //% weight=100 blockId="id_setdisplay" block="set mode %mode | background color %bc | foreground color %fc"
     export function fn_setDisplay(mode: number, bc: number, fc: number): void {
@@ -54,7 +54,7 @@ namespace VT100 {
         serial.writeString("\x1B[1K");
     }
 }
-//% weight=130 color=#0fbc11 icon="\uf009"
+//% weight=130 color=#bda00f icon="\uf009"
 namespace Two_digits {
     let off = 0
     let pos = 0
@@ -174,7 +174,7 @@ namespace Two_digits {
         }
     }
 }
-//% weight=120 color=#0fbc11 icon="\uf10c"
+//% weight=120 color=#0fbdae icon="\uf10c"
 namespace Bits {
     enum digit_value {
         //% block="zero"
@@ -229,7 +229,7 @@ namespace Bits {
     }
 }
 
-//% weight=110 color=#0fbc11 icon="\uf0e7"
+//% weight=110 color=#bd970f icon="\uf0e7"
 namespace taibit {
     /** function */
     function delay_LED(item: number) {
