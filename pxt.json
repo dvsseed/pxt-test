@@ -10,7 +10,7 @@
         "README.md",
         "main.ts",
         "taibit.ts",
-        "lang/zh-TW/test-strings.json"
+        "_locales/zh/test-strings.json"
     ],
     "testFiles": [
         "test.ts"
