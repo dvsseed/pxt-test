@@ -1,6 +1,6 @@
-# robotbit
+# test
 
-Extension for Kittenbot Robotbit
+Extension for taibit test
 
 ## License
 
@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-robotbit=github:Kittenbot/pxt-robotbit
+test=github:dvsseed/pxt-test
 ```
