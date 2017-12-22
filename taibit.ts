@@ -1,5 +1,5 @@
 //% weight=110 color=#bd970f icon="\uf0e7"
-namespace taibit {
+namespace TaiBit {
     /** function */
     function delay_LED(item: number) {
         led.plot(item, 2)
