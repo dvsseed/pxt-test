@@ -1,5 +1,9 @@
 {
 	"test.fn_setDisplay|block": "設定 模式 %mode | 背景顏色 %bc | 前景顏色 %fc",
+	"test.fn_moveTo|block": "移動 到 x %x | y %y",
+	"test.fn_showText|block": "顯示 文字 %s",
+	"test.fn_showNumber|block": "顯示 數字 %n",
+	"test.fn_showAscii|block": "顯示 ascii %n",
 	"test.fn_hextodec|block": "轉換 十六進制 %hex_num | 為 十進制",
 	"test.fn_bintodec|block": "轉換 二進制 %bin_num | 為 十進制",
 	"test.delayleds|block": "霹靂燈 | 次數 %ts",
