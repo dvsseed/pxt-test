@@ -1,3 +1,7 @@
+/**
+ * Custom Package to declare a namespace
+ */
+
 //% weight=110 color=#bd970f icon="\uf0e7"
 namespace TaiBit {
     /** function */
